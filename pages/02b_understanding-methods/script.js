@@ -32,8 +32,7 @@ controls.resume.addEventListener("click", () => boxTween.resume());
 // only work on when pause button working
 controls.kill.addEventListener("click", () => boxTween.kill());
 // destory full animaion . then work after full herd reset the webpage
-controls.yoyo.addEventListener("click", () =>
-  boxTween.yoyo(true).repeat(1).restart()
+controls.yoyo.addEventListener("click", () =>boxTween.yoyo(true).repeat(1).restart()
 );
 
 // এটা GSAP-কে বলে, এনিমেশনটা যখন শেষ হবে তখন উল্টো দিকে ফিরবে — অর্থাৎ অ্যানিমেশনটা সামনে-ভালো পর পর আবার পেছনে-ভালো রিভার্স মোডে যাবে।
