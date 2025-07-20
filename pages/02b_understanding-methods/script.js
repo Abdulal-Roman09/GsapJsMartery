@@ -7,7 +7,7 @@ const boxTween = gsap.to(".box", {
   scale: 1.25,
   duration: 2,
   //   borderRadius: "50%",
-  //   paused: true, // start paused for manual control
+  paused: true, // start paused for manual control 
 });
 
 const controls = {
@@ -21,8 +21,11 @@ const controls = {
 };
 
 controls.play.addEventListener("click", () => boxTween.play());
+// play full think now work only kill
 controls.pause.addEventListener("click", () => boxTween.pause());
 // pause can only stop
+controls.restart.addEventListener("click", () => boxTween.restart());
+// reset full think but not work on kill
 controls.reverse.addEventListener("click", () => boxTween.reverse());
 // reverce the full process
 controls.resume.addEventListener("click", () => boxTween.resume());
